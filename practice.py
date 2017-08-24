@@ -1,6 +1,9 @@
 from sys import argv
 from os.path import exists
+<<<<<<< HEAD
 import string
+=======
+>>>>>>> 27ecebd93dc1976d051edc7ab1ba2926f22eb932
 
 script, fromfile , tofile = argv
 
@@ -19,8 +22,11 @@ for k in listtest:
 
 listtest2=["a","b"]
 listtest.append(listtest2)
+<<<<<<< HEAD
 
 print("test" , 3 in listtest)
+=======
+>>>>>>> 27ecebd93dc1976d051edc7ab1ba2926f22eb932
 print(listtest[6])
 
 for i in range(0,6):
@@ -32,6 +38,7 @@ while j < 6:
 
 def editfile(fromfile,tofile):
     print(exists(tofile))
+<<<<<<< HEAD
     dict1 = dict()
     listx = list()
     fl = open(fromfile)
@@ -65,3 +72,12 @@ p,q = listtest2
 print(p,q)
 ak = listtest2
 print(ak)
+=======
+    fl = open(fromfile)
+    tf=open(tofile,'a')
+    tf.write(fl.read())
+    fl.close()
+    tf.close()
+
+editfile(fromfile, tofile)
+>>>>>>> 27ecebd93dc1976d051edc7ab1ba2926f22eb932
